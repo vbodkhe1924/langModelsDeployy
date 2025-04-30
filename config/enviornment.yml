@@ -1,0 +1,17 @@
+name: llm_deployment
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch=2.0.1
+  - cuda=11.7 
+  - transformers=4.38.2
+  - onnx=1.16.0
+  - python-tritonclient
+  - pip
+  - pip:
+      - unsloth==2024.4
+      - bitsandbytes==0.43.0
+      - tensorrt==8.6.1 --extra-index-url https://pypi.ngc.nvidia.com
